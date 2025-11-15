@@ -63,3 +63,128 @@ Fast, accurate, and ideal for conversational legal information.
 
 ## 📁 Project Structure
 
+```
+rights-chatbot/
+│
+├── backend/
+│   ├── main.py
+│   ├── .gitignore (contains .env)
+│   ├── requirements.txt
+│
+├── frontend/
+│   ├── index.html
+│   ├── styles.css
+│   ├── script.js
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/akshansh-thakur/rights-chatbot.git
+cd rights-chatbot
+```
+
+---
+
+## 🛠 Backend Setup (FastAPI)
+
+```bash
+cd backend
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+### Create a `.env` file:
+
+```
+GROQ_API_KEY=your_api_key_here
+```
+
+### Run Backend Server
+
+```bash
+uvicorn main:app --reload --port 8000
+```
+
+Backend will run at:  
+👉 http://127.0.0.1:8000/chat
+
+---
+
+## 🎨 Frontend Setup
+
+Just open:
+
+```
+frontend/index.html
+```
+
+No server required — runs instantly.
+
+---
+
+## 📨 API Usage
+
+### POST `/chat`
+
+#### Request
+```json
+{
+  "message": "What are my rights?"
+}
+```
+
+#### Response
+```json
+{
+  "reply": "Here is a simple explanation of your rights..."
+}
+```
+
+---
+
+## 🧩 Future Enhancements
+
+- Multi-language support (Hindi, Tamil, Marathi, Bengali)  
+- WhatsApp-style UI redesign  
+- Panic Exit Button  
+- State-wise helpline directories  
+- NGO search by city  
+- Deploy frontend + backend  
+- Mobile version  
+- AI-powered risk level detection  
+
+---
+
+## 📸 Screenshots (Add yours here)
+
+```
+/screenshots/chat-ui.png
+/screenshots/helpline-buttons.png
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Please open an issue before major changes.
+
+---
+
+## 📜 License
+
+MIT License
+
+---
+
+## 👨‍💻 Developed By  
+**Akshansh Thakur**  
+Built with ❤️ using FastAPI, Groq, HTML, CSS, and JavaScript.
