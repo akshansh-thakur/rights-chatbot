@@ -1,0 +1,165 @@
+body {
+    background: #323232;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 40%;
+    margin: 40px auto;
+    background: whitesmoke;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+/* Chat Box */
+.chat-box {
+    height: 480px;
+    overflow-y: auto;
+    border: 1px solid #969696;
+    border-radius: 8px;
+    padding: 12px;
+    background: #fcfcfc;
+    scroll-behavior: smooth;
+}
+
+/* Message bubbles */
+.message {
+    margin: 10px 0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    max-width: 80%;
+    animation: fadeSlide 0.4s ease;
+}
+
+.user {
+    background: #d7ffd7;
+    margin-left: auto;
+    text-align: right;
+}
+
+.bot {
+    background: #e1e6ff;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    margin-top: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #4c6ef5;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76,110,245,0.4);
+}
+
+button {
+    margin-left: 10px;
+    padding: 10px 16px;
+    background: #4c6ef5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3b5bdb;
+    transform: scale(1.05);
+}
+
+/* Typing animation */
+.typing {
+    width: 30px;
+    height: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    background: #555;
+    border-radius: 50%;
+    margin: 0 3px;
+    animation: bounce 0.7s infinite alternate;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-6px); }
+}
+
+.quick-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+    align-items: center;
+    text-align: center;
+}
+
+.quick-buttons button {
+    background: black;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+    text-align: center;
+    align-items: center;
+}
+
+.quick-buttons button:hover {
+    background: gray;
+    transform: scale(1.05);
+}
