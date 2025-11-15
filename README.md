@@ -166,8 +166,8 @@ No server required — runs instantly.
 ## 📸 Screenshots (Add yours here)
 
 ```
-/screenshots/chat-ui.png
-/screenshots/helpline-buttons.png
+<img width="2560" height="1070" alt="image" src="https://github.com/user-attachments/assets/05ef53b4-5718-4c46-8ea8-6f9490c202a1" />
+
 ```
 
 ---
